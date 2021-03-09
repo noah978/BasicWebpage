@@ -12,7 +12,11 @@
   box-shadow: 0.1em 0.1em .25em #111111;
   word-spacing: 1.5rem;
 }
+.blog {
+  padding-top: 1rem;
+}
 .album {
+  padding-top: 1rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -151,4 +155,36 @@ img {
 .social a:hover {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+/* Shoutout to Mozilla for the CSS details
+/* ********************************************************************/
+
+details {
+  padding: 1rem 0rem;
+}
+
+details > summary {
+  padding: 0.25rem 0.5rem;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+
+details > div {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 0.125rem 0.5rem;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details[open] > summary {
+  background-color: #ccf;
+}
+
+.date {
+  float: right;
 }
